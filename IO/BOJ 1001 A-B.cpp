@@ -5,6 +5,7 @@ int main(){
     std::cout << a-b;
 }
 
+
 /*
 Input 1:
 3 2
