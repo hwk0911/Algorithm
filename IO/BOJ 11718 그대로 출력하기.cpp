@@ -9,14 +9,13 @@ int main() {
 }
 
 /*
-예제 입력 1 :
+Input 1:
 Hello
 Baekjoon
 Online Judge
 
-예제 출력 1 :
+Output 1:
 Hello
 Baekjoon
 Online Judge
-
 */

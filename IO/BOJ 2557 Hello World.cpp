@@ -5,10 +5,8 @@ int main(){
 }
 
 /*
-예제 입력 1 :
+Input 1:
 
-예제 출력 1 :
-
+Output 1:
 Hello World!
-
 */
