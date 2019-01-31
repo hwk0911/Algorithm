@@ -53,10 +53,10 @@ Output 1:
 620
 61
 
-Input 1:
+Input 2:
 64
 65
 
-Output 1:
+Output 2:
 -1
 */
