@@ -29,10 +29,10 @@ int main() {
 	QuickX(data, 0, N - 1);
 
 	//stable_sort 구현
-	for (int i = 1; i < N; i++) {
-		if (data[i - 1].x != data[i].x) {
-			QuickY(data, index, i - 1);
-			index = i;
+	for (int i = 0; i < N - 1; i++) {
+		if (data[i].x != data[i + 1].x) {
+			QuickY(data, index, i);
+			index = i + 1;
 		}
 	}
 	//마지막 항목 정렬
@@ -44,7 +44,6 @@ int main() {
 	}
 }
 
-//x좌표 퀵소팅
 void QuickX(arr *data, int start, int end) {
 	int left = start;
 	int right = end;
@@ -97,7 +96,7 @@ void QuickY(arr *data, int start, int end) {
 	}
 	
 	if (start < right)
-		QuickX(data, start, right);
+		QuickY(data, start, right);
 	if (end > left)
-		QuickX(data, left, end);
+		QuickY(data, left, end);
 }
