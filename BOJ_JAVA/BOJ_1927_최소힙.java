@@ -1,32 +1,41 @@
-package BOJ_JAVA;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.PriorityQueue;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class BOJ_1927_최소힙 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
-        PriorityQueue<Integer> heap = new PriorityQueue<>();
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int N = sc.nextInt();
+        ArrayList <Integer> arr = new ArrayList<Integer>();
 
-        int N, x;
-
-        N = Integer.parseInt(br.readLine());
+        Integer num;
 
         for(int i = 0 ; i < N ; i++){
-            x = Integer.parseInt(br.readLine());
-            if(x == 0){
-                if(heap.isEmpty())
+            if((num = sc.nextInt()) == 0){
+                if(arr.isEmpty())
                     System.out.println(0);
-                else{
-                    System.out.println(heap.poll());
+                else {
+                    getMin(arr);
                 }
             }
-            else{
-                heap.add(x);
+            else
+                arr.add(num);
+        }
+    }
+    public static void getMin(ArrayList <Integer> arr){
+        int min = arr.get(0);
+        int index = 0;
+
+        for(int i = 1; i < arr.size() ; i++){
+            if(min > arr.get(i)){
+                index = i;
+                min = arr.get(i);
             }
         }
+
+        System.out.println(min);
+        arr.remove(index);
+
+        return ;
     }
 }

@@ -1,47 +1,24 @@
-package BOJ_JAVA;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 public class BOJ_5052_전화번호목록 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String data;
         int t, n;
-        boolean flag = true;
-        ArrayList<String> number = new ArrayList<>();
-        t = Integer.parseInt(br.readLine());
-
+        int length;
+        t = sc.nextInt();
+        ArrayList<String> [][] number = new ArrayList[t][11];
         for(int i = 0 ; i < t ; i++){
-            n = Integer.parseInt(br.readLine());
+            n = sc.nextInt();
             for(int j = 0 ; j < n ; j++){
-                number.add(br.readLine());
+                data = sc.nextLine();
+                number[i][data.length()].add(data);
             }
+            for(int j = 1 ; j < 10 ; j++){
 
-            Collections.sort(number);
-
-            for(int j = 0 ; j < number.size() - 1; j++){
-                for(int k = j + 1 ; k < number.size() ; k++){
-                    if(number.get(j).length() >= number.get(k).length()){
-                        break;
-                    }
-                    else if(number.get(j).equals(number.get(k).substring(0, number.get(j).length()))) {
-                        flag = false;
-                        break;
-                    }
-                 }
-                if(!flag){
-                    System.out.println("NO");
-                    break;
-                }
             }
-            if(flag){
-                System.out.println("YES");
-            }
-            number.clear();
-            flag = true;
         }
     }
 }
+
