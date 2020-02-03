@@ -10,11 +10,11 @@ public class BOJ_11021_AsumB_7 {
 
         T = sc.nextInt();
 
-        for(int i = 0; i < T ; i++){
+        for (int i = 0; i < T; i++) {
             A = sc.nextInt();
             B = sc.nextInt();
 
-            System.out.println(command + (i+1) + ": "  + (A+B));
+            System.out.println(command + (i + 1) + ": " + (A + B));
         }
     }
 }

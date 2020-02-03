@@ -9,6 +9,6 @@ public class BOJ_15964_이상한기호 {
         A = sc.nextInt();
         B = sc.nextInt();
 
-        System.out.println((A*A)-(B*B));
+        System.out.println((A * A) - (B * B));
     }
 }

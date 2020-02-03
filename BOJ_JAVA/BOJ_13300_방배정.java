@@ -13,17 +13,17 @@ public class BOJ_13300_방배정 {
 
         int[][] data = new int[6][2];
 
-        for(int i = 0 ; i < N ; i++){
+        for (int i = 0; i < N; i++) {
             S = sc.nextInt();
             Y = sc.nextInt();
 
             data[Y - 1][S]++;
         }
-        for(int i = 0 ; i < 6 ; i++){
+        for (int i = 0; i < 6; i++) {
             num += (data[i][0] / K) + (data[i][1] / K);
-            if(data[i][0] % K != 0)
+            if (data[i][0] % K != 0)
                 num++;
-            if(data[i][1] % K != 0)
+            if (data[i][1] % K != 0)
                 num++;
         }
         System.out.println(num);

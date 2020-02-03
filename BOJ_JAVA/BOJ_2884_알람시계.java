@@ -9,11 +9,11 @@ public class BOJ_2884_알람시계 {
         H = sc.nextInt();
         M = sc.nextInt();
 
-        if(M >= 45)
+        if (M >= 45)
             M -= 45;
-        else{
+        else {
             H--;
-            if(H < 0)
+            if (H < 0)
                 H += 24;
             M = M + 15;
         }

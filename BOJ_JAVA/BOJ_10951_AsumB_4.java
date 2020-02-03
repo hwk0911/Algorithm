@@ -6,7 +6,7 @@ public class BOJ_10951_AsumB_4 {
 
         int A, B;
 
-        while(sc.hasNextInt()){
+        while (sc.hasNextInt()) {
             A = sc.nextInt();
             B = sc.nextInt();
             System.out.println(A + B);

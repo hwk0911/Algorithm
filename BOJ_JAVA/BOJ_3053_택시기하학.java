@@ -7,7 +7,7 @@ public class BOJ_3053_택시기하학 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         Integer R = Integer.parseInt(br.readLine());
 
-        System.out.printf("%.6f\n", R*R*Math.PI);
-        System.out.printf("%.6f\n",(double)R*R*2);
+        System.out.printf("%.6f\n", R * R * Math.PI);
+        System.out.printf("%.6f\n", (double) R * R * 2);
     }
 }

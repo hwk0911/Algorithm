@@ -14,8 +14,8 @@ public class BOJ_10818_최소최대 {
         String A = br.readLine();
         StringTokenizer data = new StringTokenizer(A);
 
-        while(data.hasMoreTokens()){
-            
+        while (data.hasMoreTokens()) {
+
         }
     }
 }

@@ -8,7 +8,7 @@ public class BOJ_1330_두수비교하기 {
         A = sc.nextInt();
         B = sc.nextInt();
 
-        switch(A.compareTo(B)){
+        switch (A.compareTo(B)) {
             case -1:
                 System.out.println('<');
                 break;

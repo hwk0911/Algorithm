@@ -8,11 +8,11 @@ public class BOJ_1546_평균 {
         float sum = 0;
         float num;
 
-        for(int i = 0 ; i < N ; i++) {
+        for (int i = 0; i < N; i++) {
             num = sc.nextInt();
             if (max < num) max = num;
             sum += num;
         }
-        System.out.printf("%.2f",sum / (max*N) * 100);
+        System.out.printf("%.2f", sum / (max * N) * 100);
     }
 }

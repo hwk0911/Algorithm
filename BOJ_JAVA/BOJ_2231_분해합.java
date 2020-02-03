@@ -15,14 +15,14 @@ public class BOJ_2231_분해합 {
         num = N - 45;
 
         num--;
-        while(!answer.equals(N)){
+        while (!answer.equals(N)) {
             num++;
             answer = num;
             data = num.toString();
-            for(int i = 0 ; i < data.length() ; i++){
+            for (int i = 0; i < data.length(); i++) {
                 answer += data.charAt(i) - '0';
             }
-            if(num > N){
+            if (num > N) {
                 num = 0;
                 break;
             }

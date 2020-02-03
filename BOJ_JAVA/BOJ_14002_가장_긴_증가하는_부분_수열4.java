@@ -15,13 +15,13 @@ public class BOJ_14002_가장_긴_증가하는_부분_수열4 {
         String[] num;
         num = br.readLine().split(" ");
 
-        for(int i = 0 ; i < N ; i++) {
+        for (int i = 0; i < N; i++) {
             data.add(Integer.parseInt(num[i]));
         }
-        for(int i = 0 ; i < N ; i++){
-            if(answer.isEmpty())
+        for (int i = 0; i < N; i++) {
+            if (answer.isEmpty())
                 answer.add(data.get(i));
-            else{
+            else {
 
             }
         }

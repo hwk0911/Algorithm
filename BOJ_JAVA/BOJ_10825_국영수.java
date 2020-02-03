@@ -23,7 +23,7 @@ public class BOJ_10825_국영수 {
 
         Collections.sort(students);
 
-        for(Student s : students)
+        for (Student s : students)
             sb.append(s.name).append("\n");
 
         System.out.print(sb);
