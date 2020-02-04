@@ -1,7 +1,10 @@
-This area for BeakJoon Acmicpc Algorithm solution
+# 개요
+문제풀이를 통한 알고리즘 연습
 
-It is a step-by-step solution.
+## 사용 스택
+### Java
+    IDE : IntelliJ
+### C++
+    IDE : VisualStudio
 
-ING means step-by-step proceeding.
-
-FIN means step-by-step termination.
+문제출처 : https://www.acmicpc.net/
