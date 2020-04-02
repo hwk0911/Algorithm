@@ -1,3 +1,5 @@
+# 방문수 
+[![HitCount](http://hits.dwyl.com/{Algorithm}/{Junit-TDD}.svg)](http://hits.dwyl.com/{hwk0911}/{Algorithm})
 # 개요
     문제풀이를 통한 알고리즘 연습
 
